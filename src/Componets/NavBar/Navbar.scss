@@ -1,0 +1,41 @@
+@import "../Utilites/utilities.scss";
+
+.nav-bar {
+	background-color: $navbar;
+	height: 7rem;
+	display: flex;
+	box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.nav-logo {
+	margin-left: 2rem;
+	width: 18rem;
+	margin-top: 8px;
+	margin-bottom: 100px;
+	font-family: "Cairo", sans-serif;
+	font-size: 30px;
+	color: $navcolor;
+}
+
+@media only screen and (max-width: 1024px) {
+	.nav-logo {
+		margin-left: 2rem;
+		width: 18rem;
+	}
+	.nav-bar {
+		height: 9rem;
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.nav-logo {
+		margin-left: 2rem;
+		width: 14rem;
+	}
+	.nav-bar {
+		height: 6rem;
+		display: flex;
+		align-items: center;
+	}
+}

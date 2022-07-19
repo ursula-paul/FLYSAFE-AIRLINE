@@ -1,0 +1,170 @@
+@import "../Utilites/utilities.scss";
+.container {
+	margin-left: 6rem;
+	margin-right: 6rem;
+	justify-content: center;
+	align-items: center;
+	padding-top: 4rem;
+	cursor: pointer;
+
+	.main-title {
+		font-size: 4.4rem;
+		font-weight: 600;
+		color: $fontcolor;
+	}
+
+	.main-subtitle {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: $subtitlecolor;
+	}
+
+	.set-margin {
+		margin-bottom: 3rem;
+	}
+
+	.allience-search {
+		display: flex;
+		margin-top: -1rem;
+		gap: 1.4rem;
+	}
+
+	.check-search {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		font-size: 1.5rem;
+		font-weight: normal;
+		color: $checksearch;
+	}
+}
+
+.container__airline {
+	// display: flex;
+	// gap: 2rem;
+	// flex-wrap: wrap;
+	margin-top: 7rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 2rem;
+	row-gap: 2rem;
+}
+
+.airline {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	height: 18rem;
+	width: 31.5rem;
+	border-radius: 1rem;
+	box-shadow: 0px 0px 10px -1px rgba(89, 89, 89, 0.75);
+	-webkit-box-shadow: 0px 0px 10px -1px rgba(89, 89, 89, 0.75);
+	-moz-box-shadow: 0px 0px 10px -1px rgba(89, 89, 89, 0.75);
+}
+
+.extra {
+	list-style: none;
+	display: none;
+}
+
+.airline:hover {
+	.extra {
+		display: block;
+	}
+	border: 1px solid #444;
+}
+
+.airline__content {
+	display: flex;
+	gap: 1.5rem;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	width: 6rem;
+}
+
+p {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.anchor {
+	text-decoration: none;
+	color: $anchorcolor;
+}
+
+@media screen and (max-width: 1024px) {
+	.container__airline {
+		// display: flex;
+		// gap: 2rem;
+		// flex-wrap: wrap;
+		// margin-top: 7rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 2rem;
+		row-gap: 2rem;
+	}
+
+	.airline {
+		height: 20rem;
+		width: 100%;
+		align-content: center;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		margin: 0 5rem 0 5rem;
+	}
+	.container__airline {
+		// display: flex;
+		// gap: 2rem;
+		// flex-wrap: wrap;
+		// margin-top: 7rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+		row-gap: 2rem;
+	}
+	.airline {
+		height: 20rem;
+		width: 100%;
+		align-content: center;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.container__airline {
+		// display: flex;
+		// gap: 2rem;
+		// flex-wrap: wrap;
+		// margin-top: 7rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 2rem;
+		row-gap: 2rem;
+	}
+}
+
+// @media only screen and (max-width: 912px) {
+// 	.airline {
+// 		height: 35rem;
+// 		width: 44rem;
+// 		justify-items: center;
+// 	}
+
+// 	.container .main-subtitle {
+// 		font-size: 2.5rem;
+// 	}
+
+// 	.container .check-search {
+// 		display: flex;
+// 		gap: 1rem;
+// 		align-items: center;
+// 		font-size: 2.3rem;
+// 		font-weight: normal;
+// 	}
+// }

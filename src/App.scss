@@ -1,0 +1,23 @@
+@import "./Componets//Utilites/utilities.scss";
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $body;
+}
+
+//1027a5bb169a468196e25df847aad90f
